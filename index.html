@@ -5,27 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.scss" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Zifan Pan</title>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <ul>
         <li>
-          <a href="">Home</a>
+          <a href="">HOME</a>
         </li>
         <li>
-          <a href="">About Me</a>
+          <a href="">ABOUT</a>
         </li>
         <li>
-          <a href="">My Projects</a>
+          <a href="">PORTFOLIO</a>
         </li>
         <li>
-          <a href="">Contact Me</a>
+          <a href="">CONTACTS</a>
         </li>
       </ul>
     </nav>
-    <h1>Zifan Pan personal web</h1>
+    <section class="home">
+      <h1 class="home-heading">Hi there! I'm Zifan Pan</h1>
+      <h2 class="home-heading home-subheading">
+        A Full-Stack developer with a passion for building intuitive and
+        user-friendly apps.
+      </h2>
+      <a href="" class="home-link">View My Works</a>
+    </section>
+    <section class="about">
+      <h2 class="about-heading">About Me</h2>
+      <div class="about-text">
+        <p>Hello! Thank you for visiting my website.</p>
+        <p>
+          My name is Brian, and I'm a self-learned web developer based in
+          Toronto who previously studied Statistical Science.
+        </p>
+        <p>
+          I love working collaboratively and create user-friendly accessible
+          applications.
+        </p>
+        <p>I care about environment and sustainability.</p>
+        <p>
+          In my spare time I'd like to cooking, gaming, hiking,driving, trimming
+          my indoor garden, and playing with my cute Chinchillas named Coffee
+          and Cream.
+        </p>
+      </div>
+      <a href="" class="about-link">Get In Touch</a>
+    </section>
+    <section class="portfolio">
+      <h2>My Portfolio</h2>
+      <div class="project project-one">
+        <h3 class="project-heading">Dish Guru</h3>
+        <p class="project-intro">
+          An self-built full-stack application with MongoDB,Express, React, and
+          NodeJS (MERN). Users are able to explore various recipes created by
+          other users and write their reviews for these recipes. An user can
+          view, edit, and write their own recipes after register/login. All data
+          including users, dish recipes, and their associated reviews are
+          processed and passed using Redux and Express, then stored in MongoDB.
+        </p>
+        <div class="project-icons">ICONS</div>
+        <div class="project-links">
+          <a href="">View Live</a>
+          <a href="">GitHub Repo</a>
+        </div>
+      </div>
+      <div class="project project-two">
+        <h3 class="project-heading">A Pure React App</h3>
+        <p class="project-intro">To be continued ...</p>
+        <div class="project-icons">ICONS</div>
+        <div class="project-links">
+          <a href="">View Live</a>
+          <a href="">GitHub Repo</a>
+        </div>
+      </div>
+      <div class="project project-one">
+        <h3 class="project-heading">Room Page</h3>
+        <p class="project-intro">
+          A show page static website with three different pages which are able
+          to be switched by clicking buttons is built with HTML, CSS and
+          VanillaJS. This project created by myself was my first step of
+          mastering JavaScript, HTML and CSS.
+        </p>
+        <div class="project-icons">ICONS</div>
+        <div class="project-links">
+          <a href="">View Live</a>
+          <a href="">GitHub Repo</a>
+        </div>
+      </div>
+    </section>
 
+    <section class="contact">
+      <h2>Contact Me</h2>
+    </section>
     <script src="./script.js"></script>
   </body>
 </html>
