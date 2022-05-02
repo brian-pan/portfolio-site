@@ -37,14 +37,44 @@ section {
   border: 1px solid salmon;
 }
 
+.btn {
+  border: 1px solid red;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  transition: all 0.1s;
+}
+
+.btn-primary {
+}
+
+.btn-secondary {
+}
+
 /* individual settings */
-/* .about {
-  position: absolute;
-} */
+.home {
+  height: 100vh;
+}
+.about {
+  height: 100vh;
+}
 
 .navbar {
-  /* position: relative; */
+  position: sticky;
+  top: 0px;
   border: 1px solid goldenrod;
+  background-color: goldenrod;
   display: flex;
   justify-content: space-between;
   padding: 20px 10px;
@@ -54,9 +84,23 @@ section {
   margin-left: 40px;
 }
 
+.navbar-ul {
+  display: none;
+}
+
 .project-image {
   border: 1px solid brown;
   width: 90%;
   margin: 0 auto;
   height: 200px;
+}
+
+@media (min-width: 1280px) {
+  .navbar-hamburger {
+    display: none;
+  }
+
+  .navbar-ul {
+    display: flex;
+  }
 }
