@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Roboto:300");
 /* global settings */
 * {
   margin: 0;
@@ -35,6 +36,7 @@ h3 {
 
 section {
   border: 1px solid salmon;
+  /* height: 100vh; */
 }
 
 .btn {
@@ -86,6 +88,11 @@ section {
 
 .navbar-ul {
   display: none;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .project-image {
