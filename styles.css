@@ -1,3 +1,4 @@
+/* global settings */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@
 ul {
   border: 1px solid teal;
   list-style-type: none;
+  display: flex;
 }
 
 li {
@@ -19,6 +21,42 @@ a {
   color: #000;
 }
 
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
 section {
   border: 1px solid salmon;
+}
+
+/* individual settings */
+/* .about {
+  position: absolute;
+} */
+
+.navbar {
+  /* position: relative; */
+  border: 1px solid goldenrod;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.navbar-name {
+  margin-left: 40px;
+}
+
+.project-image {
+  border: 1px solid brown;
+  width: 90%;
+  margin: 0 auto;
+  height: 200px;
 }

@@ -9,22 +9,6 @@
     <title>Zifan Pan</title>
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="">HOME</a>
-        </li>
-        <li>
-          <a href="">ABOUT</a>
-        </li>
-        <li>
-          <a href="">PORTFOLIO</a>
-        </li>
-        <li>
-          <a href="">CONTACTS</a>
-        </li>
-      </ul>
-    </nav>
     <section class="home">
       <h1 class="home-heading">Hi there! I'm Zifan Pan</h1>
       <h2 class="home-heading home-subheading">
@@ -34,6 +18,25 @@
       <a href="" class="home-link">View My Works</a>
     </section>
     <section class="about">
+      <nav class="navbar">
+        <div class="navbar-name">Zifan</div>
+        <div class="navbar-ul">
+          <ul>
+            <li>
+              <a href="">HOME</a>
+            </li>
+            <li>
+              <a href="">ABOUT</a>
+            </li>
+            <li>
+              <a href="">PORTFOLIO</a>
+            </li>
+            <li>
+              <a href="">CONTACTS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <h2 class="about-heading">About Me</h2>
       <div class="about-text">
         <p>Hello! Thank you for visiting my website.</p>
@@ -54,17 +57,57 @@
       </div>
       <a href="" class="about-link">Get In Touch</a>
     </section>
+    <section class="skills">
+      <h2>SKILLS</h2>
+      <div class="skills-web">
+        <h4>Web Development Skills:</h4>
+        <ul class="skills-ul">
+          <li class="skills-li">React</li>
+          <li class="skills-li">MongoDB</li>
+          <li class="skills-li">JavaScript</li>
+          <li class="skills-li">NodeJS</li>
+          <li class="skills-li">Express</li>
+          <li class="skills-li">HTML5</li>
+          <li class="skills-li">CSS</li>
+          <li class="skills-li">SCSS</li>
+          <li class="skills-li">Redux</li>
+          <li class="skills-li">FireBase</li>
+          <li class="skills-li">Cloudinary</li>
+        </ul>
+      </div>
+      <div class="skills-data">
+        <h4>Data Analytical Skills:</h4>
+        <ul class="skills-ul">
+          <li class="skills-li">Python</li>
+          <li class="skills-li">R/Rstudio</li>
+          <li class="skills-li">SQL/MySQL</li>
+          <li class="skills-li">MS Excel</li>
+          <li class="skills-li">Tableau</li>
+          <li class="skills-li">Power BI</li>
+        </ul>
+      </div>
+      <div class="skills-other">
+        <h4>Other Skills:</h4>
+        <ul class="skills-ul">
+          <li class="skills-li">Git/GitHub</li>
+          <li class="skills-li">Responsive Design</li>
+          <li class="skills-li">Command Line</li>
+          <li class="skills-li">Version Control</li>
+        </ul>
+      </div>
+    </section>
     <section class="portfolio">
       <h2>My Portfolio</h2>
       <div class="project project-one">
+        <div class="project-image"></div>
         <h3 class="project-heading">Dish Guru</h3>
         <p class="project-intro">
-          An self-built full-stack application with MongoDB,Express, React, and
-          NodeJS (MERN). Users are able to explore various recipes created by
-          other users and write their reviews for these recipes. An user can
+          A self-built full-stack (MERN) application with MongoDB, Express,
+          React, and NodeJS. Users are able to explore various recipes created
+          by other users and write their reviews for these recipes. An user can
           view, edit, and write their own recipes after register/login. All data
-          including users, dish recipes, and their associated reviews are
-          processed and passed using Redux and Express, then stored in MongoDB.
+          including users, dish recipes, and the associated reviews are
+          processed and passed using Redux and Express, and stored in MongoDB.
         </p>
         <div class="project-icons">ICONS</div>
         <div class="project-links">
@@ -73,6 +116,7 @@
         </div>
       </div>
       <div class="project project-two">
+        <div class="project-image"></div>
         <h3 class="project-heading">A Pure React App</h3>
         <p class="project-intro">To be continued ...</p>
         <div class="project-icons">ICONS</div>
@@ -81,7 +125,8 @@
           <a href="">GitHub Repo</a>
         </div>
       </div>
-      <div class="project project-one">
+      <div class="project project-three">
+        <div class="project-image"></div>
         <h3 class="project-heading">Room Page</h3>
         <p class="project-intro">
           A show page static website with three different pages which are able
@@ -95,11 +140,34 @@
           <a href="">GitHub Repo</a>
         </div>
       </div>
+      <h3>My data analytical projects:</h2>
+      <div class="project project-data-one">
+        <div class="project-image"></div>
+        <h3 class="project-heading">Road Safety Machine Learning Project</h3>
+        <p class="project-intro"></p>
+        <div class="project-icons">ICONS</div>
+        <div class="project-links">
+          <a href="">View Live</a>
+          <a href="">GitHub Repo</a>
+        </div>
+      </div>
+      <div class="project project-data-two">
+        <div class="project-image"></div>
+        <h3 class="project-heading">Fuel Efficiency Predicting Project</h3>
+        <p class="project-intro"></p>
+        <div class="project-icons">ICONS</div>
+        <div class="project-links">
+          <a href="">View Live</a>
+          <a href="">GitHub Repo</a>
+        </div>
+      </div>
     </section>
 
     <section class="contact">
       <h2>Contact Me</h2>
     </section>
+    <footer class="copyright">&copy; Zifan Pan 2022</footer>
+
     <script src="./script.js"></script>
   </body>
 </html>
