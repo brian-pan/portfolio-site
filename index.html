@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.scss" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Zifan050 Pan</title>
+    <title>Zifan Pan</title>
   </head>
   <body>
     <section class="home" id="home">
@@ -23,7 +34,7 @@
     <nav class="navbar">
       <div class="navbar-name">Zifan</div>
       <div class="FABMenu">
-        <input type="checkbox" checked/>
+        <input type="checkbox" />
         <div class="navbar-hamburger">
           <div class="dots">
             <span class="first"></span>
@@ -33,55 +44,44 @@
         </div>
         <div class="navbar-items-bar">
           <div class="action_items">
-            <span class="first_item">
-              <i class="material-icons">
-              favorite
-              </i>
+            <span class="item-1">
+              <a href="#home"><i class="material-icons"> home </i></a>
             </span>
-            <span class="second_item">
-              <i class="material-icons">
-              chat
-              </i>
+            <span class="item-2">
+              <a href="#about"><i class="material-icons"> face </i></a>
             </span>
-            <span class="third_item">
-              <i class="material-icons">
-              get_app
-              </i>
+            <span class="item-3">
+              <a href="#skills"
+                ><i class="material-icons"> fitness_center </i></a
+              >
             </span>
-            <span class="fourth_item">
+            <span class="item-4">
+              <a href="#portfolio">
+                <i class="material-icons"> description </i>
+              </a>
+            </span>
+            <span class="item-5">
               <a href="#contact">
-                <i class="material-icons">
-                  email
-                  </i>
+                <i class="material-icons"> email </i>
               </a>
             </span>
           </div>
         </div>
       </div>
-      <div class="navbar-ul">
-        <ul>
-          <li>
-            <a href="#home">HOME</a>
-          </li>
-          <li>
-            <a href="#about">ABOUT</a>
-          </li>
-          <li>
-            <a href="#portfolio">PORTFOLIO</a>
-          </li>
-          <li>
-            <a href="#contact">CONTACTS</a>
-          </li>
-        </ul>
-      </div>
     </nav>
+
     <section class="about" id="about">
-      <h2 class="about-heading">About Me</h2>
+      <h2 class="heading about-heading">About Me</h2>
+      <img
+        src="./assets/images/personalImage.JPG"
+        alt="Zifan's image"
+        class="about-image"
+      />
       <div class="about-text">
         <p>Hello! Thank you for visiting my website.</p>
         <p>
           My name is Brian, and I'm a self-learned web developer based in
-          Toronto who previously studied Statistical Science.
+          Toronto who previously studied in Statistical Science.
         </p>
         <p>
           I love working collaboratively and create user-friendly accessible
@@ -89,49 +89,107 @@
         </p>
         <p>I care about environment and sustainability.</p>
         <p>
-          In my spare time I'd like to cooking, gaming, hiking,driving, trimming
-          my indoor garden, and playing with my cute Chinchillas named Coffee
-          and Cream.
+          In my spare time I'd like to cooking, gaming, hiking, driving,
+          trimming my indoor garden, and playing with my cute chinchillas named
+          Coffee and Cream.
         </p>
       </div>
-      <a href="" class="about-link">Get In Touch</a>
+      <!-- <a href="#contact" class="btn btn-primary about-link">Get In Touch</a> -->
     </section>
     <section class="skills" id="skills">
-      <h2>SKILLS</h2>
+      <h2 class="heading skills-heading">My Skills</h2>
       <div class="skills-web">
         <h4>Web Development Skills:</h4>
         <ul class="skills-ul">
-          <li class="skills-li">React</li>
-          <li class="skills-li">MongoDB</li>
-          <li class="skills-li">JavaScript</li>
-          <li class="skills-li">NodeJS</li>
-          <li class="skills-li">Express</li>
-          <li class="skills-li">HTML5</li>
-          <li class="skills-li">CSS</li>
-          <li class="skills-li">SCSS</li>
-          <li class="skills-li">Redux</li>
-          <li class="skills-li">FireBase</li>
-          <li class="skills-li">Cloudinary</li>
+          <li class="skills-li">
+            <i class="devicon-react-original"></i>
+            React
+          </li>
+          <li class="skills-li">
+            <i class="devicon-mongodb-plain"></i>
+            MongoDB
+          </li>
+          <li class="skills-li">
+            <i class="devicon-javascript-plain"></i>
+            JavaScript
+          </li>
+          <li class="skills-li">
+            <i class="devicon-nodejs-plain"></i>
+            NodeJS
+          </li>
+          <li class="skills-li">
+            <i class="devicon-express-original"></i>
+            Express
+          </li>
+          <li class="skills-li">
+            <i class="devicon-html5-plain"></i>
+            HTML5
+          </li>
+          <li class="skills-li">
+            <i class="devicon-css3-plain"></i>
+            CSS
+          </li>
+          <li class="skills-li">
+            <i class="devicon-sass-original"></i>
+            SASS
+          </li>
+          <li class="skills-li">
+            <i class="devicon-redux-original"></i>
+            Redux
+          </li>
+          <li class="skills-li">
+            <i class="devicon-firebase-plain"></i>
+            FireBase
+          </li>
+          <li class="skills-li">
+            <i class="devicon-googlecloud-plain"></i>
+            Cloudinary
+          </li>
+          <li class="skills-li">
+            <i class="devicon-heroku-original"></i>
+            Heroku
+          </li>
         </ul>
       </div>
       <div class="skills-data">
         <h4>Data Analytical Skills:</h4>
         <ul class="skills-ul">
-          <li class="skills-li">Python</li>
-          <li class="skills-li">R/Rstudio</li>
-          <li class="skills-li">SQL/MySQL</li>
+          <li class="skills-li">
+            <i class="devicon-python-plain"></i>
+            Python
+          </li>
+          <li class="skills-li">
+            <i class="devicon-rstudio-plain"></i>
+            R/Rstudio
+          </li>
+          <li class="skills-li">
+            <i class="devicon-mysql-plain"></i>
+            SQL/MySQL
+          </li>
           <li class="skills-li">MS Excel</li>
           <li class="skills-li">Tableau</li>
           <li class="skills-li">Power BI</li>
+          <li class="skills-li">
+            <i class="devicon-anaconda-original"></i>
+            Anaconda
+          </li>
         </ul>
       </div>
       <div class="skills-other">
         <h4>Other Skills:</h4>
         <ul class="skills-ul">
-          <li class="skills-li">Git/GitHub</li>
+          <li class="skills-li">
+            <i class="devicon-github-original"></i>
+            Git/GitHub
+          </li>
           <li class="skills-li">Responsive Design</li>
-          <li class="skills-li">Command Line</li>
-          <li class="skills-li">Version Control</li>
+          <li class="skills-li">
+            <i class="devicon-bash-plain"></i>
+            Command Line
+          </li>
+          <li class="skills-li">
+            <i class="fa-solid fa-code-compare"></i> Version Control
+          </li>
           <li class="skills-li">Code Pen</li>
           <li class="skills-li">Material UI</li>
           <li class="skills-li">Accessibility</li>
@@ -139,10 +197,21 @@
       </div>
     </section>
     <section class="portfolio" id="portfolio">
-      <h2>My Portfolio</h2>
+      <h2 class="heading portfolio-heading">My Portfolio</h2>
       <div class="project project-one">
         <div class="project-image"></div>
         <h3 class="project-heading">Dish Guru</h3>
+        <div class="project-usages">
+          <p>React</p>
+          <span>/</span>
+          <p>MongoDB</p>
+          <span>/</span>
+          <p>NodeJS</p>
+          <span>/</span>
+          <p>Express</p>
+          <span>/</span>
+          <p>SCSS</p>
+        </div>
         <p class="project-intro">
           A self-built full-stack (MERN) application with MongoDB, Express,
           React, and NodeJS. Users are able to explore various recipes created
@@ -151,17 +220,17 @@
           including users, dish recipes, and the associated reviews are
           processed and passed using Redux and Express, and stored in MongoDB.
         </p>
-        <div class="project-icons">ICONS</div>
+
         <div class="project-links">
-          <a href="">View Live</a>
-          <a href="">GitHub Repo</a>
+          <a href="" class="btn btn-secondary btn-sm btn-light">View Live</a>
+          <a href="" class="btn btn-secondary btn-sm btn-light">GitHub Repo</a>
         </div>
       </div>
       <div class="project project-two">
         <div class="project-image"></div>
         <h3 class="project-heading">A Pure React App</h3>
         <p class="project-intro">To be continued ...</p>
-        <div class="project-icons">ICONS</div>
+        <div class="project-usages">ICONS</div>
         <div class="project-links">
           <a href="">View Live</a>
           <a href="">GitHub Repo</a>
@@ -176,18 +245,18 @@
           VanillaJS. This project created by myself was my first step of
           mastering JavaScript, HTML and CSS.
         </p>
-        <div class="project-icons">ICONS</div>
+        <div class="project-usages">ICONS</div>
         <div class="project-links">
           <a href="">View Live</a>
           <a href="">GitHub Repo</a>
         </div>
       </div>
-      <h3>My data analytical projects:</h2>
+      <h3>My data analytical projects:</h3>
       <div class="project project-data-one">
         <div class="project-image"></div>
         <h3 class="project-heading">Road Safety Machine Learning Project</h3>
         <p class="project-intro"></p>
-        <div class="project-icons">ICONS</div>
+        <div class="project-usages">ICONS</div>
         <div class="project-links">
           <a href="">View Live</a>
           <a href="">GitHub Repo</a>
@@ -197,7 +266,7 @@
         <div class="project-image"></div>
         <h3 class="project-heading">Fuel Efficiency Predicting Project</h3>
         <p class="project-intro"></p>
-        <div class="project-icons">ICONS</div>
+        <div class="project-usages">ICONS</div>
         <div class="project-links">
           <a href="">View Live</a>
           <a href="">GitHub Repo</a>
