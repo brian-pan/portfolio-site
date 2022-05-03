@@ -1,4 +1,9 @@
 * {
+  --heading-font-size-x-large: 44px;
+  --heading-font-size-large: 38px;
+  --heading-font-size-medium: 32px;
+  --heading-font-size-small: 26px;
+  --heading-font-size-x-small: 20px;
   --color-background: #fefae05b;
   --color-background-secondary: #fff;
   --color-primary: #faedcd;
@@ -10,6 +15,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Roboto:300");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 .material-icons {
   font-family: "Material Icons";
@@ -135,6 +141,13 @@ section {
 /* individual settings */
 .home {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-heading {
+  font-size: var(--heading-font-size-small);
 }
 
 .navbar {
@@ -458,33 +471,27 @@ section {
 }
 
 /* typing effect */
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-.container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container p {
-  font-size: 3rem;
+/* by Coding Journey @ https://codepen.io/Coding_Journey/pen/BEMgbX */
+.home p {
+  font-size: var(--heading-font-size-medium);
   padding: 0.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
   text-align: center;
   overflow: hidden;
 }
-.container p span.typed-text {
+.home p span.typed-text {
   font-weight: normal;
   color: var(--color-primary-darkest);
 }
-.container p span.cursor {
+.home p span.cursor {
   display: inline-block;
   background-color: #ccc;
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
 }
-.container p span.cursor.typing {
+.home p span.cursor.typing {
   animation: none;
 }
 @keyframes blink {
@@ -506,7 +513,7 @@ section {
 }
 
 /* bouncing downward arrow */
-.fa-chevron-down {
+/* .fa-chevron-down {
   color: #ff6363 !important;
   bottom: 10px;
   margin-left: -30px;
