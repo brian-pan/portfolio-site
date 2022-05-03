@@ -30,6 +30,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fefae0;
+}
+
 ul {
   /* border: 1px solid teal; */
   list-style-type: none;
@@ -66,7 +70,7 @@ section {
 .heading {
   /* border: 1px solid yellowgreen; */
   text-align: center;
-  margin: 70px 0 30px 0;
+  padding: 70px 0 30px;
   text-decoration: underline;
   text-decoration-style: wavy;
   text-decoration-color: #f19181;
@@ -111,8 +115,7 @@ section {
 }
 
 .navbar {
-  border: 1px solid #fff;
-  background-color: #fff;
+  background-color: #fefae0;
   position: sticky;
   top: 0px;
   display: flex;
@@ -165,7 +168,7 @@ section {
 }
 
 .skills h4 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .skills div {
@@ -181,7 +184,6 @@ section {
 }
 
 .skills-li {
-  /* margin-right: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,15 +198,21 @@ section {
 
 .project {
   border: 2px solid paleturquoise;
-  padding: 10px;
+  background-color: #fff;
+  padding: 5px;
   margin: 10px;
 }
 
 .project-image {
-  border: 1px solid brown;
-  width: 90%;
-  margin: 0 auto 10px auto;
-  height: 200px;
+  /* border: 1px solid brown; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-image img {
+  height: 240px;
+  width: 260px;
 }
 
 .project-heading {
@@ -404,6 +412,13 @@ section {
   .about-text p {
     margin-bottom: 4px;
   }
+  .skills h4 {
+    margin-left: 10%;
+  }
+  .project-image img {
+    width: 600px;
+    height: 450px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -422,5 +437,18 @@ section {
   }
   .skills-li {
     width: 20%;
+  }
+  .project {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 20px;
+  }
+  .project-image {
+    margin-right: 30px;
+  }
+  .project-content {
+    border: 1px solid salmon;
+    width: 40%;
   }
 }
