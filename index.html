@@ -14,10 +14,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/124e16dffc.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles.css" />
     <title>Zifan Pan</title>
   </head>
@@ -32,7 +32,7 @@
       <a href="" class="btn btn-secondary">Download Resume</a>
     </section>
     <nav class="navbar">
-      <div class="navbar-name">Zifan</div>
+      <!-- <div class="navbar-name">Zifan</div> -->
       <div class="FABMenu">
         <input type="checkbox" />
         <div class="navbar-hamburger">
@@ -72,27 +72,29 @@
 
     <section class="about" id="about">
       <h2 class="heading about-heading">About Me</h2>
-      <img
-        src="./assets/images/personalImage.JPG"
-        alt="Zifan's image"
-        class="about-image"
-      />
-      <div class="about-text">
-        <p>Hello! Thank you for visiting my website.</p>
-        <p>
-          My name is Brian, and I'm a self-learned web developer based in
-          Toronto who previously studied in Statistical Science.
-        </p>
-        <p>
-          I love working collaboratively and create user-friendly accessible
-          applications.
-        </p>
-        <p>I care about environment and sustainability.</p>
-        <p>
-          In my spare time I'd like to cooking, gaming, hiking, driving,
-          trimming my indoor garden, and playing with my cute chinchillas named
-          Coffee and Cream.
-        </p>
+      <div class="about-content">
+        <img
+          src="./assets/images/personalImage.JPG"
+          alt="Zifan's image"
+          class="about-image"
+        />
+        <div class="about-text">
+          <p>Hello! Thank you for visiting my website.</p>
+          <p>
+            My name is Brian, and I'm a self-learned web developer based in
+            Toronto who previously studied in Statistical Science.
+          </p>
+          <p>
+            I love working collaboratively and create user-friendly accessible
+            applications.
+          </p>
+          <p>I care about environment and sustainability.</p>
+          <p>
+            In my spare time I'd like to cooking, gaming, hiking, driving,
+            trimming my indoor garden, and playing with my cute chinchillas
+            named Coffee and Cream.
+          </p>
+        </div>
       </div>
       <!-- <a href="#contact" class="btn btn-primary about-link">Get In Touch</a> -->
     </section>
@@ -166,9 +168,10 @@
             <i class="devicon-mysql-plain"></i>
             SQL/MySQL
           </li>
-          <li class="skills-li">MS Excel</li>
-          <li class="skills-li">Tableau</li>
-          <li class="skills-li">Power BI</li>
+          <li class="skills-li">
+            <i class="fa-solid fa-file-csv"></i>MS Excel
+          </li>
+          <li class="skills-li"><i class="fa-solid fa-table"></i> Tableau</li>
           <li class="skills-li">
             <i class="devicon-anaconda-original"></i>
             Anaconda
@@ -182,7 +185,9 @@
             <i class="devicon-github-original"></i>
             Git/GitHub
           </li>
-          <li class="skills-li">Responsive Design</li>
+          <li class="skills-li">
+            <i class="fa-solid fa-mobile-screen-button"></i> Responsive Design
+          </li>
           <li class="skills-li">
             <i class="devicon-bash-plain"></i>
             Command Line
@@ -190,9 +195,6 @@
           <li class="skills-li">
             <i class="fa-solid fa-code-compare"></i> Version Control
           </li>
-          <li class="skills-li">Code Pen</li>
-          <li class="skills-li">Material UI</li>
-          <li class="skills-li">Accessibility</li>
         </ul>
       </div>
     </section>
@@ -264,7 +266,7 @@
       </div>
       <div class="project project-data-two">
         <div class="project-image"></div>
-        <h3 class="project-heading">Fuel Efficiency Predicting Project</h3>
+        <h3 class="project-heading">Fuel Efficiency Modeling Project</h3>
         <p class="project-intro"></p>
         <div class="project-usages">ICONS</div>
         <div class="project-links">
