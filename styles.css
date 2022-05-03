@@ -232,7 +232,7 @@ section {
 .portfolio-subtitle {
   font-size: 18px;
   text-align: center;
-  margin: 15px 0;
+  padding: 10px 0 0 0;
 }
 
 .project {
@@ -300,6 +300,22 @@ section {
 
 .contact {
   padding: 10px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icons a {
+  font-size: 50px;
+  margin: 10px 20px;
+}
+
+.contact-icons a:hover {
+  transform: scale(1.1);
+  transition: all 0.05s;
+  color: var(--color-primary-darkest);
 }
 
 .copyright {
