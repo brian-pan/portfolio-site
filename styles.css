@@ -459,6 +459,9 @@ section {
 
 /* responsive layout */
 @media (min-width: 768px) {
+  .about {
+    height: 100vh;
+  }
   .about-heading {
     margin-top: 70px;
   }
