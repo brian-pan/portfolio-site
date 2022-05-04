@@ -158,11 +158,22 @@ section {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.home-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.home-content {
 }
 
 .home-heading {
   font-size: var(--heading-font-size-small);
-  margin-top: 30vh;
+  margin-top: 20vh;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -171,7 +182,7 @@ section {
   font-size: var(--heading-font-size-xxx-small);
   text-align: center;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 
 /* typing effect */
@@ -217,8 +228,8 @@ section {
 }
 
 .home-links {
-  margin-top: 30vh;
-  margin: 30vh 15px 0 15px;
+  /* margin-top: 30vh; */
+  /* margin: 30vh 15px 0 15px; */
 }
 
 .home-links a {
@@ -252,9 +263,9 @@ section {
   justify-content: space-around;
 }
 
-.about-heading {
+/* .about-heading {
   margin-top: 30px;
-}
+} */
 
 .about-content {
   display: flex;
@@ -264,6 +275,7 @@ section {
   background-color: var(--color-background-secondary);
   padding: 30px;
   border-radius: 10px;
+  margin: 20px 2%;
 }
 
 .about-image {
@@ -289,7 +301,7 @@ section {
   border: 2px solid var(--color-primary-darker);
   background-color: var(--color-background-secondary);
   border-radius: 10px;
-  margin: 0 8%;
+  margin: 0 2%;
   margin-top: 20px;
   padding: 20px;
 }
@@ -564,7 +576,7 @@ section {
   -webkit-transition: 1.2s ease;
 }
 /* Scroll down indicator (bouncing) */
-@-webkit-keyframes bounce {
+/* @-webkit-keyframes bounce {
   0%,
   20%,
   50%,
@@ -618,12 +630,19 @@ section {
 .bounce {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
-}
+} */
 
 /* responsive layout */
 @media (min-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
   .home-wrap {
     display: flex;
+    flex-direction: row;
   }
   .home-heading {
     font-size: var(--heading-font-size-medium);
@@ -637,18 +656,23 @@ section {
   }
   .home-links a {
     font-size: var(--heading-font-size-xx-small);
+    width: 560px;
   }
   .about {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .about-heading {
-    margin-top: 70px;
+    margin-top: 0;
   }
   .about-content {
     display: flex;
     flex-direction: row;
     width: 85%;
-    margin: 0 auto;
+    padding: 20px 10%;
   }
   .about-image {
     margin-right: 40px;

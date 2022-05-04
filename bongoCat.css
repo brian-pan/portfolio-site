@@ -2,12 +2,13 @@
 /* @ https://codepen.io/Sloth_Sonal/pen/JjYWobO */
 
 /* bongo cat */
-.bongoCat {
+/* .bongoCat {
   position: relative;
-}
+} */
 
 #bongo-cat {
-  position: absolute;
+  /* position: absolute; */
+  /* border: 1px solid salmon; */
 
   height: 250px;
 
@@ -26,13 +27,14 @@
 
 @media (min-width: 768px) {
   #bongo-cat {
-    position: absolute;
+    /* position: absolute; */
+    /* border: 1px solid salmon; */
 
     height: 300px;
 
     width: 300px;
 
-    top: 35vh;
+    top: 0;
 
     bottom: 0;
 
@@ -41,16 +43,18 @@
     right: 0;
 
     margin: auto;
+    margin-right: 30px;
+    margin-top: 20vh;
   }
 }
 
 @media (min-width: 1280px) {
   #bongo-cat {
-    position: absolute;
+    /* position: absolute; */
 
-    height: 33vh;
+    height: 500px;
 
-    width: 33vw;
+    width: 500px;
 
     top: 35vh;
 
@@ -59,8 +63,6 @@
     left: 6vw;
 
     right: 0;
-
-    margin: auto;
   }
 }
 
