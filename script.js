@@ -6,8 +6,8 @@ const textArray = [
   "frontend developer",
   "data analyst",
 ];
-const typingDelay = 120;
-const erasingDelay = 100;
+const typingDelay = 50;
+const erasingDelay = 50;
 const newTextDelay = 2000; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
