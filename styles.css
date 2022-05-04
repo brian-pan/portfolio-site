@@ -273,15 +273,14 @@ section {
   align-items: center;
   border: 2px solid var(--color-primary-darker);
   background-color: var(--color-background-secondary);
-  padding: 30px;
   border-radius: 10px;
   margin: 20px 2%;
 }
 
 .about-image {
-  height: 400px;
-  width: 300px;
-  margin: 20px auto 25px auto;
+  height: 360px;
+  width: 270px;
+  margin: 10px auto;
   border-radius: 10px;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
 }
@@ -290,7 +289,7 @@ section {
   text-align: center;
   margin-bottom: 20px;
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .skills {
@@ -643,6 +642,7 @@ section {
   .home-wrap {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   .home-heading {
     font-size: var(--heading-font-size-medium);
@@ -717,7 +717,7 @@ section {
 @media (min-width: 1280px) {
   .home-heading {
     font-size: var(--heading-font-size-large);
-    margin-top: 28vh;
+    margin-top: 10vh;
   }
   .home p {
     font-size: var(--heading-font-size-medium);
