@@ -4,6 +4,8 @@
   --heading-font-size-medium: 32px;
   --heading-font-size-small: 26px;
   --heading-font-size-x-small: 20px;
+  --heading-font-size-xx-small: 16px;
+  --heading-font-size-xxx-small: 14px;
   --color-background: #fefae05b;
   --color-background-secondary: #fff;
   --color-primary: #faedcd;
@@ -95,7 +97,6 @@ section {
 }
 
 .btn {
-  border: 1px solid var(--color-primary-darker);
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
@@ -106,6 +107,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 560px;
 }
 
 .btn:hover {
@@ -114,19 +116,19 @@ section {
 }
 
 .btn-primary {
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 .btn-primary:hover {
-  background-color: var(--color-primary-darker);
-  border-color: var(--color-primary-darker);
+  background-color: var(--color-secondary-darker);
+  color: #fff;
 }
 
 .btn-secondary {
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-secondary-darker);
 }
 .btn-secondary:hover {
-  border: 1px solid var(--color-secondary-darker);
-  background-color: var(--color-secondary-darker);
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
 }
 
 .btn-sm {
@@ -143,11 +145,72 @@ section {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .home-heading {
   font-size: var(--heading-font-size-small);
+  margin-top: 30vh;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.home-subheading {
+  font-size: var(--heading-font-size-xx-small);
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* typing effect */
+/* by Coding Journey @ https://codepen.io/Coding_Journey/pen/BEMgbX */
+.home p {
+  font-size: var(--heading-font-size-x-small);
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.home p span.typed-text {
+  font-weight: 700;
+  color: var(--color-primary-darkest);
+}
+.home p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.home p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+.home-links {
+  margin-top: 30vh;
+  margin: 30vh 15px 0 15px;
+}
+
+.home-links a {
+  margin: 10px auto;
+  font-size: var(--heading-font-size-xxx-small);
 }
 
 .navbar {
@@ -470,48 +533,6 @@ section {
   transition-delay: 0.15s;
 }
 
-/* typing effect */
-/* by Coding Journey @ https://codepen.io/Coding_Journey/pen/BEMgbX */
-.home p {
-  font-size: var(--heading-font-size-medium);
-  padding: 0.5rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  text-align: center;
-  overflow: hidden;
-}
-.home p span.typed-text {
-  font-weight: normal;
-  color: var(--color-primary-darkest);
-}
-.home p span.cursor {
-  display: inline-block;
-  background-color: #ccc;
-  margin-left: 0.1rem;
-  width: 3px;
-  animation: blink 1s infinite;
-}
-.home p span.cursor.typing {
-  animation: none;
-}
-@keyframes blink {
-  0% {
-    background-color: #ccc;
-  }
-  49% {
-    background-color: #ccc;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #ccc;
-  }
-}
-
 /* bouncing downward arrow */
 /* .fa-chevron-down {
   color: #ff6363 !important;
@@ -581,6 +602,22 @@ section {
 
 /* responsive layout */
 @media (min-width: 768px) {
+  .home-wrap {
+    display: flex;
+  }
+  .home-heading {
+    font-size: var(--heading-font-size-medium);
+  }
+  .home p {
+    font-size: var(--heading-font-size-small);
+  }
+  .home-subheading {
+    font-size: var(--heading-font-size-x-small);
+    width: 65%;
+  }
+  .home-links a {
+    font-size: var(--heading-font-size-xx-small);
+  }
   .about {
     height: 100vh;
   }
@@ -634,6 +671,17 @@ section {
 }
 
 @media (min-width: 1280px) {
+  .home-heading {
+    font-size: var(--heading-font-size-large);
+    margin-top: 28vh;
+  }
+  .home p {
+    font-size: var(--heading-font-size-medium);
+  }
+  .home-subheading {
+    font-size: var(--heading-font-size-small);
+    width: 65%;
+  }
   .about {
     height: 100vh;
   }

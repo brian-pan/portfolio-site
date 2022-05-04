@@ -5,14 +5,15 @@
 .bongoCat {
   position: relative;
 }
+
 #bongo-cat {
   position: absolute;
 
-  height: 60vh;
+  height: 250px;
 
-  width: 60vw;
+  width: 250px;
 
-  top: 0;
+  top: 35vh;
 
   bottom: 0;
 
@@ -24,6 +25,43 @@
 }
 
 @media (min-width: 768px) {
+  #bongo-cat {
+    position: absolute;
+
+    height: 300px;
+
+    width: 300px;
+
+    top: 35vh;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    margin: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  #bongo-cat {
+    position: absolute;
+
+    height: 33vh;
+
+    width: 33vw;
+
+    top: 35vh;
+
+    bottom: 0;
+
+    left: 6vw;
+
+    right: 0;
+
+    margin: auto;
+  }
 }
 
 .typing-animation {
