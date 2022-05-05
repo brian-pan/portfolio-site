@@ -9,7 +9,12 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Comfortaa:wght@400;700&family=Knewave&family=Luckiest+Guy&family=Montserrat+Alternates:wght@100;200;700&family=Permanent+Marker&family=Sansita:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
@@ -26,7 +31,10 @@
     <section class="home" id="home">
       <div class="home-wrap">
         <div class="home-content">
-          <h1 class="home-heading">Hi there! I'm Zifan Pan,</h1>
+          <h1 class="home-heading">
+            Hi there! <br class="hide-when-not-mobile" />
+            I'm Zifan Pan,
+          </h1>
           <h2 class="home-typingEffect">
             a <span class="typed-text"></span><span class="cursor">&nbsp;</span>
           </h2>
@@ -517,40 +525,169 @@
         </div>
       </div>
     </nav>
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading portfolio-heading">My Portfolio</h2>
+      <h3 class="portfolio-subtitle">Web Development Projects</h3>
+      <div class="project project-one">
+        <div class="project-image">
+          <img
+            src="./assets/images/dishguruScreenshot.png"
+            alt="first project image"
+          />
+        </div>
+        <div class="project-content">
+          <h4 class="project-heading">Dish Guru</h4>
+          <div class="project-usages" id="dishguruusage">
+            <p>
+              React <span>|</span> MongoDB <span>|</span> NodeJS
+              <span>|</span> Express <span>|</span> SCSS
+            </p>
+          </div>
+          <p class="project-intro">
+            A self-built full-stack (MERN) application with MongoDB, Express,
+            React, and NodeJS. Users are able to explore various recipes created
+            by other users and write their reviews for these recipes. An user
+            can view, edit, and write their own recipes after register/login.
+            All data including users, dish recipes, and the associated reviews
+            are processed and passed using Redux and Express, and stored in
+            MongoDB.
+          </p>
 
-    <section class="about" id="about">
-      <h2 class="heading about-heading">About Me</h2>
-      <div class="about-content">
-        <img
-          src="./assets/images/personalImage.JPG"
-          alt="Zifan's image"
-          class="about-image"
-        />
-        <div class="about-text">
-          <p>Hello! Thank you for visiting my website.</p>
-          <p>
-            My name is Brian, and I'm a self-learned web developer based in
-            Toronto who previously studied in Statistical Science.
-          </p>
-          <p>
-            I love working collaboratively and create user-friendly accessible
-            applications.
-          </p>
-          <p>I care about environment and sustainability.</p>
-          <p>
-            In my spare time I'd like to cooking, gaming, hiking, driving,
-            trimming my indoor garden, and playing with my cute chinchillas
-            named Coffee and Cream.
-          </p>
+          <div class="project-links">
+            <a href="" class="btn btn-primary btn-sm btn-light">View Live</a>
+            <a href="" class="btn btn-secondary btn-sm btn-light">GitHub</a>
+          </div>
         </div>
       </div>
-      <!-- <a href="#contact" class="btn btn-primary about-link">Get In Touch</a> -->
+      <!-- <div class="project project-two">
+        <div class="project-image"></div>
+        <h3 class="project-heading">A Pure React App</h3>
+        <p class="project-intro">To be continued ...</p>
+        <div class="project-usages">ICONS</div>
+        <div class="project-links">
+          <a href="" class="btn btn-secondary btn-sm btn-light">View Live</a>
+          <a href="" class="btn btn-secondary btn-sm btn-light">GitHub</a>
+        </div>
+      </div> -->
+      <div class="project project-three">
+        <div class="project-image">
+          <img
+            src="./assets/images/roomPageScreenshot.png"
+            alt="project three image"
+          />
+        </div>
+        <div class="project-content">
+          <h4 class="project-heading">Room Page</h4>
+          <div class="project-usages">
+            HTML <span>|</span> JavaScript <span>|</span> CSS
+          </div>
+          <p class="project-intro">
+            A show page static website with three different pages which are able
+            to be switched by clicking buttons is built with HTML, CSS and
+            VanillaJS. This project created by myself was my first step of
+            mastering JavaScript, HTML and CSS.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://brian-pan.github.io/room-page-project/"
+              class="btn btn-primary btn-sm btn-light"
+              >View Live</a
+            >
+            <a
+              href="https://github.com/brian-pan/room-page-project"
+              class="btn btn-secondary btn-sm btn-light"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+      <h3 class="portfolio-subtitle">Data Analytical Projects</h3>
+      <div class="project project-data-one">
+        <div class="project-image">
+          <img
+            src="./assets/images/mechineLearningScreenshot.png"
+            alt="data analytical project image one, a heat map about different variables"
+          />
+        </div>
+        <div class="project-content">
+          <h4 class="project-heading">Road Safety Machine Learning Project</h4>
+          <div class="project-usages">
+            <p>Python</p>
+            <span>/</span>
+            <p>R</p>
+            <span>/</span>
+            <p>Excel</p>
+            <span>/</span>
+            <p>Machine Learning</p>
+          </div>
+          <p class="project-intro">
+            A machine learning project report, which used open-source data from
+            the department of transport of UK to predict the fatal car accidents
+            chances and find the most related reasons of accidents by using
+            different regression methods such as logistic regression and random
+            forest. In the end, 5 reasons are filtered out with 65% accuracy
+            based on the data and plots.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://github.com/brian-pan/machine-learning-python-project-1/blob/master/machine_learning_python_project_one.ipynb"
+              class="btn btn-primary btn-sm btn-light"
+              >View Live</a
+            >
+            <a
+              href="https://github.com/brian-pan/machine-learning-python-project-1"
+              class="btn btn-secondary btn-sm btn-light"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="project project-data-two">
+        <div class="project-image">
+          <img
+            src="./assets/images/fuelModelingScreenshot.png"
+            alt="data analytical project image two, a combined bar plot that shows the relationship between vehicle factory and fuel costs"
+          />
+        </div>
+        <div class="project-content">
+          <h4 class="project-heading">Fuel Efficiency Modeling Project</h4>
+          <div class="project-usages">
+            <p>Rstudio</p>
+            <span>/</span>
+            <p>Rmd</p>
+            <span>/</span>
+            <p>Excel</p>
+            <span>/</span>
+            <p>Statistical Modeling</p>
+          </div>
+          <p class="project-intro">
+            A report-style project that used open-source data from the
+            government of US. This project focused on building and refining a
+            statistical model which can predict the vehicle fuel efficiency. It
+            eventually found the manufactured year, the transmission type, along
+            with 4 more variables are effective in determining the fuel
+            efficiency.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://github.com/brian-pan/DA-staModelling-lmm-glmm-Project#readme"
+              class="btn btn-primary btn-sm btn-light"
+              >View Live</a
+            >
+            <a
+              href="https://github.com/brian-pan/DA-staModelling-lmm-glmm-Project"
+              class="btn btn-secondary btn-sm btn-light"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
     <section class="skills" id="skills">
       <h2 class="heading skills-heading">My Skills</h2>
       <div class="skills-wrap">
         <div class="skills-web">
-          <h4>Web Development Skills:</h4>
+          <h3>Web Development Skills:</h3>
           <ul class="skills-ul">
             <li class="skills-li">
               <i class="devicon-react-original"></i>
@@ -619,7 +756,7 @@
           </ul>
         </div>
         <div class="skills-data">
-          <h4>Data Analytical Skills:</h4>
+          <h3>Data Analytical Skills:</h3>
           <ul class="skills-ul">
             <li class="skills-li">
               <i class="devicon-python-plain"></i>
@@ -660,7 +797,7 @@
           </ul>
         </div>
         <div class="skills-other">
-          <h4>Other Skills:</h4>
+          <h3>Other Skills:</h3>
           <ul class="skills-ul">
             <li class="skills-li">
               <i class="devicon-git-plain"></i>
@@ -681,167 +818,33 @@
         </div>
       </div>
     </section>
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading portfolio-heading">My Portfolio</h2>
-      <h3 class="portfolio-subtitle">Web Development Projects</h3>
-      <div class="project project-one">
-        <div class="project-image">
-          <img
-            src="./assets/images/dishguruScreenshot.png"
-            alt="first project image"
-          />
-        </div>
-        <div class="project-content">
-          <h3 class="project-heading">Dish Guru</h3>
-          <div class="project-usages">
-            React <span>|</span> MongoDB <span>|</span> NodeJS
-            <span>|</span> Express <span>|</span> SCSS
-          </div>
-          <p class="project-intro">
-            A self-built full-stack (MERN) application with MongoDB, Express,
-            React, and NodeJS. Users are able to explore various recipes created
-            by other users and write their reviews for these recipes. An user
-            can view, edit, and write their own recipes after register/login.
-            All data including users, dish recipes, and the associated reviews
-            are processed and passed using Redux and Express, and stored in
-            MongoDB.
+    <section class="about" id="about">
+      <h2 class="heading about-heading">About Me</h2>
+      <div class="about-content">
+        <img
+          src="./assets/images/personalImage.JPG"
+          alt="Zifan's image"
+          class="about-image"
+        />
+        <div class="about-text">
+          <p>Hello! Thank you for visiting my website.</p>
+          <p>
+            My name is Brian, and I'm a self-learned web developer based in
+            Toronto who previously studied in Statistical Science.
           </p>
-
-          <div class="project-links">
-            <a href="" class="btn btn-primary btn-sm btn-light">View Live</a>
-            <a href="" class="btn btn-secondary btn-sm btn-light">GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="project project-two">
-        <div class="project-image"></div>
-        <h3 class="project-heading">A Pure React App</h3>
-        <p class="project-intro">To be continued ...</p>
-        <div class="project-usages">ICONS</div>
-        <div class="project-links">
-          <a href="" class="btn btn-secondary btn-sm btn-light">View Live</a>
-          <a href="" class="btn btn-secondary btn-sm btn-light">GitHub</a>
-        </div>
-      </div> -->
-      <div class="project project-three">
-        <div class="project-image">
-          <img
-            src="./assets/images/roomPageScreenshot.png"
-            alt="project three image"
-          />
-        </div>
-        <div class="project-content">
-          <h3 class="project-heading">Room Page</h3>
-          <div class="project-usages">
-            <p>HTML</p>
-            <span>/</span>
-            <p>JavaScript</p>
-            <span>/</span>
-            <p>CSS</p>
-          </div>
-          <p class="project-intro">
-            A show page static website with three different pages which are able
-            to be switched by clicking buttons is built with HTML, CSS and
-            VanillaJS. This project created by myself was my first step of
-            mastering JavaScript, HTML and CSS.
+          <p>
+            I love working collaboratively and create user-friendly accessible
+            applications.
           </p>
-          <div class="project-links">
-            <a
-              href="https://brian-pan.github.io/room-page-project/"
-              class="btn btn-primary btn-sm btn-light"
-              >View Live</a
-            >
-            <a
-              href="https://github.com/brian-pan/room-page-project"
-              class="btn btn-secondary btn-sm btn-light"
-              >GitHub</a
-            >
-          </div>
-        </div>
-      </div>
-      <h3 class="portfolio-subtitle">Data Analytical Projects</h3>
-      <div class="project project-data-one">
-        <div class="project-image">
-          <img
-            src="./assets/images/mechineLearningScreenshot.png"
-            alt="data analytical project image one, a heat map about different variables"
-          />
-        </div>
-        <div class="project-content">
-          <h3 class="project-heading">Road Safety Machine Learning Project</h3>
-          <div class="project-usages">
-            <p>Python</p>
-            <span>/</span>
-            <p>R</p>
-            <span>/</span>
-            <p>Excel</p>
-            <span>/</span>
-            <p>Machine Learning</p>
-          </div>
-          <p class="project-intro">
-            A machine learning project report, which used open-source data from
-            the department of transport of UK to predict the fatal car accidents
-            chances and find the most related reasons of accidents by using
-            different regression methods such as logistic regression and random
-            forest. In the end, 5 reasons are filtered out with 65% accuracy
-            based on the data and plots.
+          <p>I care about environment and sustainability.</p>
+          <p>
+            In my spare time I'd like to cooking, gaming, hiking, driving,
+            trimming my indoor garden, and playing with my cute chinchillas
+            named Coffee and Cream.
           </p>
-          <div class="project-links">
-            <a
-              href="https://github.com/brian-pan/machine-learning-python-project-1/blob/master/machine_learning_python_project_one.ipynb"
-              class="btn btn-primary btn-sm btn-light"
-              >View Live</a
-            >
-            <a
-              href="https://github.com/brian-pan/machine-learning-python-project-1"
-              class="btn btn-secondary btn-sm btn-light"
-              >GitHub</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="project project-data-two">
-        <div class="project-image">
-          <img
-            src="./assets/images/fuelModelingScreenshot.png"
-            alt="data analytical project image two, a combined bar plot that shows the relationship between vehicle factory and fuel costs"
-          />
-        </div>
-        <div class="project-content">
-          <h3 class="project-heading">Fuel Efficiency Modeling Project</h3>
-          <div class="project-usages">
-            <p>Rstudio</p>
-            <span>/</span>
-            <p>Rmd</p>
-            <span>/</span>
-            <p>Excel</p>
-            <span>/</span>
-            <p>Statistical Modeling</p>
-          </div>
-          <p class="project-intro">
-            A report-style project that used open-source data from the
-            government of US. This project focused on building and refining a
-            statistical model which can predict the vehicle fuel efficiency. It
-            eventually found the manufactured year, the transmission type, along
-            with 4 more variables are effective in determining the fuel
-            efficiency.
-          </p>
-          <div class="project-links">
-            <a
-              href="https://github.com/brian-pan/DA-staModelling-lmm-glmm-Project#readme"
-              class="btn btn-primary btn-sm btn-light"
-              >View Live</a
-            >
-            <a
-              href="https://github.com/brian-pan/DA-staModelling-lmm-glmm-Project"
-              class="btn btn-secondary btn-sm btn-light"
-              >GitHub</a
-            >
-          </div>
         </div>
       </div>
     </section>
-
     <section class="contact" id="contact">
       <h2 class="heading contact-heading">Contact Me</h2>
       <div class="contact-icons">

@@ -17,7 +17,6 @@
 }
 
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Roboto:300");
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 .material-icons {
   font-family: "Material Icons";
@@ -85,18 +84,28 @@ a {
 
 h1 {
   font-size: 3.5rem;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 h2 {
+  font-weight: 700;
   font-size: 2.8rem;
+  /* font-family: "Montserrat Alternates", sans-serif; */
+  font-family: "Amatic SC", cursive;
 }
 
 h3 {
   font-size: 1.8rem;
 }
 
+h4 {
+  font-size: 1.6rem;
+  font-family: "Sansita", sans-serif;
+}
+
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-family: "Sansita", sans-serif;
 }
 
 .heading {
@@ -108,9 +117,10 @@ p {
 }
 
 .btn {
+  font-family: "Montserrat Alternates", sans-serif;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 700;
   cursor: pointer;
   text-align: center;
@@ -290,7 +300,7 @@ p {
   padding: 20px;
 }
 
-.skills h4 {
+.skills h3 {
   margin-bottom: 20px;
 }
 
@@ -364,6 +374,10 @@ p {
 .project-usages span {
   margin: auto 2.5px;
   color: var(--color-secondary-darker);
+}
+
+#dishguruusage {
+  font-size: 0.9rem;
 }
 
 .project-intro {
@@ -538,7 +552,15 @@ p {
 }
 
 /* responsive layout */
+@media (min-width: 400px) {
+  #dishguruusage {
+    font-size: 1rem;
+  }
+}
 @media (min-width: 768px) {
+  .hide-when-not-mobile {
+    display: none;
+  }
   .home {
     display: flex;
     flex-direction: column;
@@ -589,7 +611,7 @@ p {
   .about-text p {
     margin-bottom: 4px;
   }
-  .skills h4 {
+  .skills h3 {
     margin-left: 10%;
   }
   .skills-li {
@@ -621,6 +643,9 @@ p {
 }
 
 @media (min-width: 1280px) {
+  .hide-when-desktop {
+    display: none;
+  }
   .home-heading {
     /* font-size: var(--heading-font-size-large); */
     margin-top: 10vh;
