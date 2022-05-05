@@ -14,6 +14,9 @@
   --color-secondary: #e9edc9;
   --color-secondary-darker: #ccd5ae;
   --color-secondary-darkest: #6b793e;
+  --font-family-heading: "Montserrat Alternates", sans-serif;
+  --font-family-subheading: "Amatic SC", cursive;
+  --font-family-text: "Nunito", sans-serif;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Roboto:300");
@@ -46,7 +49,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Sansita", sans-serif;
+  font-family: var(--font-family-text);
   font-weight: 400;
 }
 
@@ -74,31 +77,33 @@ ul {
   display: flex;
 }
 
-li {
-  /* border: 1px solid thistle; */
-}
-
 a {
-  /* border: 1px solid turquoise; */
   text-decoration: none;
   color: #000;
 }
 
 h1 {
   font-size: 3.5rem;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: var(--font-family-heading);
   font-weight: 700;
 }
 
 h2 {
-  font-weight: 500;
-  font-size: 2.8rem;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 3.3rem;
+  font-family: var(--font-family-subheading);
+  font-weight: 700;
 }
 
-.profile-heading {
-  font-family: "Amatic SC", cursive;
-  font-weight: 700;
+.home h2 {
+  font-size: 2.8rem;
+  font-family: var(--font-family-heading);
+  font-weight: 200;
+}
+
+.home h2 span {
+  font-size: 2.8rem;
+  font-family: var(--font-family-heading);
+  font-weight: 200;
 }
 
 h3 {
@@ -107,12 +112,12 @@ h3 {
 
 h4 {
   font-size: 1.6rem;
-  font-family: "Sansita", sans-serif;
+  font-family: var(--font-family-text);
 }
 
 p {
   font-size: 1.1rem;
-  font-family: "Sansita", sans-serif;
+  font-family: var(--font-family-text);
 }
 
 .heading {
@@ -197,6 +202,9 @@ p {
 
 /* typing effect */
 /* by Coding Journey @ https://codepen.io/Coding_Journey/pen/BEMgbX */
+.home-typingEffect {
+  font-family: var(--font-family-heading);
+}
 .home h2 {
   /* font-size: var(--heading-font-size-x-small); */
   padding: 0.5rem;
@@ -566,9 +574,9 @@ p {
   }
 }
 @media (min-width: 768px) {
-  .hide-when-not-mobile {
+  /* .hide-when-not-mobile {
     display: none;
-  }
+  } */
   .home {
     display: flex;
     flex-direction: column;
@@ -654,9 +662,12 @@ p {
   .hide-when-desktop {
     display: none;
   }
+  .home {
+    justify-content: center;
+  }
   .home-heading {
     /* font-size: var(--heading-font-size-large); */
-    margin-top: 10vh;
+    margin-top: 0vh;
   }
   .home h2 {
     /* font-size: var(--heading-font-size-medium); */
@@ -664,6 +675,9 @@ p {
   .home-subheading {
     /* font-size: var(--heading-font-size-small); */
     width: 65%;
+  }
+  .home-links {
+    padding-bottom: 10vh;
   }
   .about {
     height: 100vh;
