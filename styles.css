@@ -89,9 +89,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-family: var(--font-family-subheading);
   font-weight: 700;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 0.1rem;
 }
 
 .home h2 {
@@ -116,7 +118,7 @@ h4 {
 }
 
 p {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   font-family: var(--font-family-text);
 }
 
@@ -140,6 +142,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 90%;
   max-width: 560px;
 }
 
@@ -169,7 +172,7 @@ p {
 
 .btn-sm {
   padding: 5px 10px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 /* individual settings */
@@ -317,7 +320,7 @@ p {
   border-radius: 10px;
   margin: 0 2%;
   margin-top: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .skills h3 {
@@ -331,7 +334,7 @@ p {
 .skills ul {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  /* width: 90%; */
   justify-content: center;
   margin: 0 auto;
 }
@@ -340,14 +343,13 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 28%;
   margin: 5px;
   text-align: center;
-  font-size: 12px;
 }
 
 .skills-li i {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .portfolio-subtitle {
@@ -395,10 +397,6 @@ p {
 .project-usages span {
   margin: auto 2.5px;
   color: var(--color-secondary-darker);
-}
-
-#dishguruusage {
-  font-size: 0.9rem;
 }
 
 .project-intro {
@@ -595,15 +593,20 @@ p {
   }
 }
 @media (min-width: 400px) {
-  #dishguruusage {
-    font-size: 1rem;
-  }
 }
 @media (min-width: 768px) {
   /* .hide-when-not-mobile {
     display: none;
   } */
-
+  h2 {
+    font-size: 3.5rem;
+  }
+  .btn {
+    width: auto;
+  }
+  .btn-sm {
+    font-size: 1rem;
+  }
   .home {
     display: flex;
     flex-direction: column;
@@ -660,8 +663,16 @@ p {
   .skills h3 {
     margin-left: 10%;
   }
-  .skills-li {
-    font-size: 16px;
+
+  .skills-wrap {
+    padding: 20px;
+  }
+
+  .skills ul {
+    width: 90%;
+  }
+  .skills-li i {
+    font-size: 50px;
   }
   .project {
     display: flex;
@@ -689,8 +700,14 @@ p {
 }
 
 @media (min-width: 1280px) {
+  .btn-sm {
+    font-size: 1.1rem;
+  }
   .btn-light {
-    font-weight: 600;
+    font-weight: 500;
+  }
+  h2 {
+    font-size: 4rem;
   }
   .hide-when-desktop {
     display: none;
