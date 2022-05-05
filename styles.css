@@ -83,31 +83,31 @@ a {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.4rem;
   font-family: var(--font-family-heading);
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3.3rem;
+  font-size: 2.5rem;
   font-family: var(--font-family-subheading);
   font-weight: 700;
 }
 
 .home h2 {
-  font-size: 2.8rem;
+  font-size: 1.3rem;
   font-family: var(--font-family-heading);
-  font-weight: 200;
+  font-weight: 700;
 }
 
 .home h2 span {
-  font-size: 2.8rem;
+  font-size: 1.3rem;
   font-family: var(--font-family-heading);
-  font-weight: 200;
+  font-weight: 100;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 h4 {
@@ -130,10 +130,10 @@ p {
 
 .btn {
   font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 1.1rem;
-  font-weight: 700;
   cursor: pointer;
   text-align: center;
   appearance: button;
@@ -141,6 +141,10 @@ p {
   align-items: center;
   justify-content: center;
   max-width: 560px;
+}
+
+.btn-light {
+  font-weight: 500;
 }
 
 .btn:hover {
@@ -168,15 +172,12 @@ p {
   font-size: 0.95rem;
 }
 
-.btn-light {
-  font-weight: 500;
-}
-
 /* individual settings */
 .home {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
 }
 
 .home-wrap {
@@ -188,7 +189,7 @@ p {
 
 .home-heading {
   /* font-size: var(--heading-font-size-small); */
-  margin-top: 20vh;
+  margin-top: 7vh;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -197,7 +198,7 @@ p {
   /* font-size: var(--heading-font-size-xxx-small); */
   text-align: center;
   width: 80%;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 0 auto;
 }
 
 /* typing effect */
@@ -247,6 +248,10 @@ p {
   100% {
     background-color: #ccc;
   }
+}
+
+.home-links {
+  /* padding-top: 10vh; */
 }
 
 .home-links a {
@@ -568,6 +573,27 @@ p {
 }
 
 /* responsive layout */
+@media (min-height: 768px) {
+  .home-heading {
+    margin-top: 15vh;
+  }
+  .home-links {
+    padding-top: 5vh;
+  }
+}
+@media (min-width: 360px) {
+  .home h2 {
+    font-size: 1.6rem;
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+  }
+
+  .home h2 span {
+    font-size: 1.6rem;
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+  }
+}
 @media (min-width: 400px) {
   #dishguruusage {
     font-size: 1rem;
@@ -577,6 +603,7 @@ p {
   /* .hide-when-not-mobile {
     display: none;
   } */
+
   .home {
     display: flex;
     flex-direction: column;
@@ -589,10 +616,13 @@ p {
     align-items: center;
   }
   .home-heading {
-    /* font-size: var(--heading-font-size-medium); */
+    font-size: 3rem;
   }
   .home h2 {
-    /* font-size: var(--heading-font-size-small); */
+    font-size: 1.8rem;
+  }
+  .home h2 span {
+    font-size: 1.8rem;
   }
   .home-subheading {
     /* font-size: var(--heading-font-size-x-small); */
@@ -659,6 +689,9 @@ p {
 }
 
 @media (min-width: 1280px) {
+  .btn-light {
+    font-weight: 600;
+  }
   .hide-when-desktop {
     display: none;
   }
