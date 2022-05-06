@@ -21,6 +21,8 @@
 
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Roboto:300");
 
+/* @font-face { font-family: Montserrat Alternates; src: './assets/fonts/'; }  */
+
 .material-icons {
   font-family: "Material Icons";
   font-weight: normal;
@@ -435,7 +437,6 @@ p {
 .copyright {
   text-align: center;
   color: rgb(179, 178, 178);
-  font-size: 12px;
   margin: 5px 0;
 }
 
@@ -627,6 +628,9 @@ p {
   .home h2 span {
     font-size: 1.8rem;
   }
+  .home h3 {
+    font-size: 1.6rem;
+  }
   .home-subheading {
     /* font-size: var(--heading-font-size-x-small); */
     width: 65%;
@@ -716,11 +720,15 @@ p {
     justify-content: center;
   }
   .home-heading {
-    /* font-size: var(--heading-font-size-large); */
+    font-size: 4.2rem;
     margin-top: 0vh;
   }
-  .home h2 {
-    /* font-size: var(--heading-font-size-medium); */
+  .home h2,
+  .home h2 span {
+    font-size: 3rem;
+  }
+  .home h3 {
+    font-size: 2rem;
   }
   .home-subheading {
     /* font-size: var(--heading-font-size-small); */
