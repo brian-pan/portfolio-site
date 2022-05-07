@@ -593,7 +593,7 @@ p {
     font-weight: 700;
   }
 }
-@media (min-width: 400px) {
+@media (min-width: 390px) {
   .FABMenu input {
     width: 70px;
     height: 70px;
@@ -629,21 +629,32 @@ p {
     transition: all 0.2s ease-in-out;
   }
   .navbar-items-bar {
-    top: 20%;
-    right: 115px;
+    top: 22%;
+    right: 100px;
     width: 340px;
     height: 56px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
     z-index: 5;
-    /*   animation-name: expand-the-bar;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out; */
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
   }
-  .FABMenu input:checked ~ .navbar-items-bar {
-    transform: translateX(80px);
+
+  .action_items span a i {
+    /* border: 1px solid red; */
+    padding: 4px 4px 0 4px;
+  }
+
+  .item-1 {
+    left: 8%;
+  }
+  .item-2 {
+    left: 23%;
+  }
+  .item-3 {
+    left: 38%;
+  }
+  .item-4 {
+    left: 53%;
+  }
+  .item-5 {
+    left: 68%;
   }
 }
 @media (min-width: 768px) {
