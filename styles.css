@@ -442,8 +442,8 @@ p {
   position: absolute;
   top: 5px;
   right: 5px;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   z-index: 20;
   border-radius: 10px;
   cursor: pointer;
@@ -457,12 +457,13 @@ p {
   width: 70px;
   height: 70px;
   border-radius: 10px;
-  box-shadow: 0px 5px 20px var(--color-primary);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
   z-index: 10;
   cursor: pointer;
 }
 
 .dots span {
+  /* border: 1px solid red; */
   position: absolute;
   top: 45%;
   width: 6px;
@@ -507,7 +508,7 @@ p {
   width: 320px;
   height: 56px;
   border-radius: 15px;
-  box-shadow: 0px 5px 20px var(--color-primary);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
   z-index: 5;
   /*   animation-name: expand-the-bar;
   animation-duration: 2s;
@@ -570,10 +571,10 @@ p {
 /* responsive layout */
 @media (min-height: 768px) {
   .home-heading {
-    margin-top: 13vh;
+    margin-top: 10vh;
   }
   .home-links {
-    padding-top: 5vh;
+    padding-top: 4vh;
   }
 }
 @media (min-width: 360px) {
@@ -591,20 +592,7 @@ p {
 }
 @media (min-width: 400px) {
   .navbar-items-bar {
-    background-color: var(--color-primary-darker);
-    position: absolute;
-    top: 20%;
-    right: 100px;
-    width: 320px;
-    height: 56px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 20px var(--color-primary);
-    z-index: 5;
-    /*   animation-name: expand-the-bar;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out; */
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
+    right: 110px;
   }
 }
 @media (min-width: 768px) {
@@ -633,6 +621,7 @@ p {
   }
   .home-heading {
     font-size: 3rem;
+    margin-top: 0vh;
   }
   .home h2 {
     font-size: 1.8rem;
@@ -646,6 +635,10 @@ p {
   .home-subheading {
     /* font-size: var(--heading-font-size-x-small); */
     width: 65%;
+  }
+  .home-links {
+    padding: 0;
+    padding-bottom: 30px;
   }
   .home-links a {
     /* font-size: var(--heading-font-size-xx-small); */

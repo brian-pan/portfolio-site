@@ -30,9 +30,9 @@
     /* position: absolute; */
     /* border: 1px solid salmon; */
 
-    height: 300px;
+    height: 350px;
 
-    width: 300px;
+    width: 350px;
 
     top: 0;
 
@@ -43,8 +43,8 @@
     right: 0;
 
     margin: auto;
-    margin-right: 30px;
-    margin-top: 20vh;
+    margin-right: 10px;
+    margin-top: 5vh;
   }
 }
 
