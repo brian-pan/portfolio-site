@@ -2,8 +2,8 @@ const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = [
-  "full-stack developer",
   "front-end developer",
+  "full-stack developer",
   "data analyst",
 ];
 const typingDelay = 50;
